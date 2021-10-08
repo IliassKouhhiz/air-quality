@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "repository": {
     "type": "git",
