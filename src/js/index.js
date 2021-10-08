@@ -140,7 +140,6 @@ pin.img.addEventListener("click", () => {
 function showResults(data) {
   logo_container.classList.add("logo-result");
   form_container.classList.add("form-result");
-  //form_container.classList.remove("form-container");
 
   h1.innerHTML = data.city.name;
   h1.style.fontSize = "35px";
@@ -365,58 +364,3 @@ function healthImplications(value) {
     health_2.style.paddingTop = "20px";
   }
 }
-
-/*<div id="dom_5"></div>
-  <div id="dom_4"></div>
-  <div id="dom_2"></div>
-  <div id="dom_1"></div>*/
-
-/*function airComposition(obj, dom) {
-  let h3 = document.querySelector("#composition > h3");
-
-  composition.classList.add("composition");
-  h3.removeAttribute("hidden");
-
-  let key_arr = [];
-  let value_arr = [];
-  for (let key in obj) {
-    key_arr.push(key);
-    value_arr.push(obj[key].v);
-  }
-  console.log(key_arr);
-  console.log(value_arr);
-  processData(key_arr, value_arr, 5, dom);
-  processData(key_arr, value_arr, 4, dom);
-  processData(key_arr, value_arr, 2, dom);
-  processData(key_arr, value_arr, 1, dom);
-}
-
-function processData(arr1, arr2, index, dom) {
-  let key = document.createElement("p");
-  let value = document.createElement("p");
-  let container = document.getElementById(`dom_${index}`);
-
-  function unitOfMeasure(x) {
-    if (x === "pm25" || x === "pm10") {
-      return "µg/m3";
-    } else {
-      return "ppb";
-    }
-  }
-
-  function dominant(x, target) {
-    if (x === arr1[index]) {
-      let dom = document.createElement("p");
-      dom.innerHTML = "Dominant";
-      target.appendChild(dom);
-    }
-  }
-
-  key.innerHTML = arr1[index];
-  value.innerHTML = arr2[index] + " " + unitOfMeasure(arr1[index]);
-
-  container.classList.add("composition-div");
-  container.appendChild(key);
-  dominant(dom, container);
-  container.appendChild(value);
-} */
