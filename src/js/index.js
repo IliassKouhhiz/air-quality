@@ -330,27 +330,27 @@ function healthImplications(value) {
     health_2.innerHTML = "";
   } else if (value >= 51 && value <= 100) {
     health_1.innerHTML =
-      "<strong>Health implications:</strong>\nAir quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
+      "<strong>Health implications:</strong><br><br>Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
     health_2.innerHTML =
       "Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.";
   } else if (value >= 101 && value <= 150) {
     health_1.innerHTML =
-      "<strong>Health implications:</strong>\nMembers of sensitive groups may experience health effects. The general public is not likely to be affected.";
+      "<strong>Health implications:</strong><br><br>Members of sensitive groups may experience health effects. The general public is not likely to be affected.";
     health_2.innerHTML =
       "Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.";
   } else if (value >= 151 && value <= 200) {
     health_1.innerHTML =
-      "<strong>Health implications:</strong>\nEveryone may begin to experience health effects; members of sensitive groups may experience more serious health effects.";
+      "<strong>Health implications:</strong><br><br>Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.";
     health_2.innerHTML =
       "Active children and adults, and people with respiratory disease, such as asthma, should avoid prolonged outdoor exertion; everyone else, especially children, should limit prolonged outdoor exertion.";
   } else if (value >= 201 && value <= 300) {
     health_1.innerHTML =
-      "<strong>Health implications:</strong>\nHealth warnings of emergency conditions. The entire population is more likely to be affected.";
+      "<strong>Health implications:</strong><br><br>Health warnings of emergency conditions. The entire population is more likely to be affected.";
     health_2.innerHTML =
       "Active children and adults, and people with respiratory disease, such as asthma, should avoid all outdoor exertion; everyone else, especially children, should limit outdoor exertion.";
   } else {
     health_1.innerHTML =
-      "<strong>Health implications:</strong>\nHealth alert! everyone may experience more serious health effects.";
+      "<strong>Health implications:</strong><br><br>Health alert! everyone may experience more serious health effects.";
     health_2.innerHTML = "Everyone should avoid all outdoor exertion.";
   }
 
